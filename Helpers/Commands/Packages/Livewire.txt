@@ -1,0 +1,12 @@
+
+php artisan make:livewire Component/TranslationComponent
+php artisan make:livewire Shipments/IndexShipmentsComponent
+php artisan make:livewire Shipments/ShowShipmentComponent
+php artisan make:livewire App/CreateLocaleComponent
+php artisan make:livewire Shipments/CreateShipmentComponent
+
+php artisan make:livewire AdminLte/ShipmentCreateFormComponent
+php artisan make:livewire AdminLte/App/LocaleCreateFormComponent
+php artisan make:livewire AdminLte/Warehousing/ShipmentFormComponent
+php artisan make:livewire AdminLte/Warehousing/CategoryFormComponent
+php artisan make:livewire AdminLte/Warehousing/CategoryRowFormComponent

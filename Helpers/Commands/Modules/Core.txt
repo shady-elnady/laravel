@@ -1,0 +1,14 @@
+php artisan module:make Core
+
+php artisan module:make-model Base/CoreBaseMigration Core
+php artisan module:make-model Base/CoreBaseModel Core
+
+
+Generate Global Models :
+    php artisan make:model Locale -a
+    php artisan make:model EntityTranslation -a
+    php artisan make:model EntityContact -a
+    php artisan make:model WebSetting -a
+    php artisan make:model Currency -a   // lkp_currencies
+    php artisan make:model Employee -a   // lkp_employees
+    php artisan make:model Attachment -a

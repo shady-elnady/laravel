@@ -1,0 +1,13 @@
+php artisan module:make Opening
+
+php artisan module:make-model Base/CoreBaseMigration Opening
+php artisan module:make-model Base/CoreBaseModel Opening
+
+Generate Models for Module Opening
+    php artisan module:make-model Original Opening -mcsfr --fillable=uuid
+    php artisan module:make-model Priority Opening -mcsfr --fillable=priority
+    php artisan module:make-model Opening Opening -mcsfr --fillable=custom_number,original_id,category_id,weight_required,priority_id,is_done
+    php artisan module:make-model OpeningsNationalty Opening -mcsfr --fillable=opening_id,nationalty_id,weight_required
+    php artisan module:make-model OpeningsNationaltyShipment Opening -mcsfr --fillable=openings_nationalty_id,shipment_id,Weight
+
+
