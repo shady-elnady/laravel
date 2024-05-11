@@ -1,4 +1,3 @@
-
 HMCV:  ( https://laravelmodules.com/docs/v11/installation-and-setup )
     composer require nwidart/laravel-modules
     php artisan vendor:publish --provider="Nwidart\Modules\LaravelModulesServiceProvider"
@@ -19,15 +18,3 @@ HMCV:  ( https://laravelmodules.com/docs/v11/installation-and-setup )
     // php artisan module:make Packing Payment Setting Locale Theme Auth Shipment
     php artisan module:make Warehousing
     //
-
-
-    // migrate
-    php artisan module:migrate Locale
-    php artisan module:migrate Payment
-    php artisan module:migrate Theme
-    php artisan module:migrate Setting
-    php artisan module:migrate Shipment
-
-    //
-    php artisan db:seed
-    php artisan module:seed Warehousing

@@ -1,0 +1,4 @@
+php artisan module:make S001Core
+
+php artisan module:make-model Base/CoreBaseMigration S001Core
+php artisan module:make-model Base/CoreBaseModel S001Core

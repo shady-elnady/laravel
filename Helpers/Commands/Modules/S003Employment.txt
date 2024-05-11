@@ -1,0 +1,13 @@
+php artisan module:make S003Employment
+
+php artisan module:make-model Base/CoreBaseMigration S003Employment
+php artisan module:make-model Base/CoreBaseModel S003Employment
+
+Generate Models for Module Employment
+    php artisan module:make-model LoadingCar S003Employment -mcsfr --fillable=branch_id,weight,barcode,price,internal_transportation,internal_download,other_cost
+    php artisan module:make-model Desk S003Employment -mcsfr --fillable=barcode //lkp_desks
+    php artisan module:make-model Employment S003Employment -mcsfr --fillable=custom_number,opening_id,employment_number,is_done
+    php artisan module:make-model EmploymentLoadingCar S003Employment -mcsfr --fillable=employment_id,loading_car_id,desk_id,Commission
+    php artisan module:make-model EmploymentLoadingCarNationalty S003Employment -mcsfr --fillable=employment_loading_car_id,nationalty_id,weight_actual
+    php artisan module:make-model EmploymentLoadingCarEmployee S003Employment -mcsfr --fillable=employment_loading_car_id,employee_id
+
